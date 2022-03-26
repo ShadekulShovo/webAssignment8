@@ -10,10 +10,6 @@ const Cart = (props) => {
 
   const random = chooseME();
 
-  function refresh() {
-    window.location.reload("Refresh");
-  }
-
   return (
     <div className="cart">
       <h1>Select Your Bat</h1>
