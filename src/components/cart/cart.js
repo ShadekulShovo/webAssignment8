@@ -2,13 +2,17 @@ import React from "react";
 
 const Cart = (props) => {
   const { cart } = props;
-  console.log(cart);
+  let itemNo = cart;
 
   function chooseME() {
-    return Math.floor(Math.random() * cart.length);
+    return Math.floor(Math.random() * itemNo.length);
   }
 
   const random = chooseME();
+
+  function refresh() {
+    window.location.reload("Refresh");
+  }
 
   return (
     <div className="cart">
@@ -23,13 +27,13 @@ const Cart = (props) => {
         ))}
 
         <div>
-          <button onClick="chooseMe" className="btn btn-primary">
+          <button onClick="chooseME()" className="btn btn-primary">
             Choose For Me
           </button>
-          <button className="btn btn-danger"> Clear</button>
+          <button className="btn btn-danger">Clear</button>
         </div>
         <div>
-          <h2>{random}</h2>
+          <h2 id="random">{random}</h2>
         </div>
       </div>
     </div>
