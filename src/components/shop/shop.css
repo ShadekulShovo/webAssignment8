@@ -3,8 +3,16 @@
   grid-template-columns: 4fr 1fr;
 }
 
-.products-conatiner {
+.products-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .products-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+  }
 }
