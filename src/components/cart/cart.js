@@ -14,8 +14,8 @@ const Cart = (props) => {
           </h4>
         ))}
         <div>
-          <button>Choose For Me</button>
-          <button> Clear</button>
+          <button className="btn btn-primary">Choose For Me</button>
+          <button className="btn btn-danger"> Clear</button>
         </div>
       </div>
     </div>

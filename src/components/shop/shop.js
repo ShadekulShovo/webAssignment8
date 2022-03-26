@@ -20,7 +20,7 @@ const Shop = () => {
   };
 
   return (
-    <div className="shop">
+    <div className="shop container-fluid">
       <div className="products-container">
         {products.map((product) => (
           <Product
@@ -31,7 +31,7 @@ const Shop = () => {
         ))}
       </div>
 
-      <div className="productSummery">
+      <div className="productSummery container-fluid">
         <Cart cart={cart}></Cart>
       </div>
     </div>
